@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mason's Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #3b82f6, #9333ea);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 40px;
+      width: 450px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      opacity: 0.85;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: white;
+      color: #4b0082;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 10px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      background: #f0eaff;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome to Mason’s Site</h1>
+    <p>Custom designed. Animated. Clean. Modern.</p>
+
+    <a class="btn" href="#">Explore</a>
+  </div>
+</body>
+</html>
